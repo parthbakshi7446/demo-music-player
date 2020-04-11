@@ -1,7 +1,11 @@
 body{
     margin:0px;
+    min-width:250px;
     padding:0px;
     background-color: rgb(1, 0, 30);
+}
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 /* general */
 .size1-2rem{
@@ -42,6 +46,10 @@ body{
 .me-picture{
     border-radius: 50%;
 }
+.weight{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
 
 /* top search bar */
 header{
@@ -50,7 +58,6 @@ header{
     background-color: rgb(1, 0, 30);
     width:100%;
     display:flex;
-    order:2;
 }
 #header-left,#header-right{
     width:50%;
@@ -77,12 +84,55 @@ header{
 /* playbar */
 footer{
     position: fixed;
-    top:93vh;
-    background-color: gray;
+    top:91.5vh;
+    background-color:#121221;
     width:100%;
-    height: 9vh;
-    /* display:none; */
+    height: 8vh;
+    display:flex;
+    padding:2px;
 }
+#footer-left{
+    width:20%;
+    height:100%;
+    display: flex;
+    align-items: center;
+}
+#footer-left img{
+    height:90%;
+    width:18%;
+    margin-right: 6px;
+    
+}
+
+.overflow{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+}
+#footer-mid{
+    width:40%;
+}
+#footer-mid-up{
+    display: flex;
+    align-items: center;
+    width:60%;
+    margin:auto;
+    justify-content: space-around;
+}
+.border-white{
+    border: 1px solid white;
+    padding:3px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 1px white;
+}
+
+#footer-right{
+    width:10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 
 /* main */
 content{
@@ -144,7 +194,7 @@ content main section{
 .song-set{
     width:47%;
     background-color: dimgray;
-    margin:10px;
+    margin:1%;
     display:flex;
     height:60px;
 }
@@ -171,7 +221,7 @@ content main section{
     display: none;
     position: absolute;
     top:0px;
-    background-color: darkgray;
+    background-color: gainsboro;
     height:100%;
     width:100%;
     justify-content: center;
@@ -229,12 +279,14 @@ a.dot:focus+div{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    min-width:14.5%;
+    /* min-width:14.5%; */
+    width:14.5%;
     margin:10px;
+    /* border:10px solid black; */
 }
 .art-img-set{
     width: 100%;
-    height:130px;
+    height:80%;
     position: relative;
     
     
@@ -267,6 +319,7 @@ a.dot:focus+div{
 /* stations */
 #stations{
     align-items: center;
+    height: 20vh;
 }
 #station-list{
     /* background-color: darkgrey; */
@@ -351,7 +404,7 @@ a.dot:focus+div{
 /* english playlist */
 #eng-playlist,#hin-playlist{
     width:100%;
-    height:190px;
+    height:30vh;
     /* display:flex; */
 }
 .eng-songset,.hin-songset{
@@ -443,6 +496,7 @@ content aside,content main,#artist-list,#eng-playlist,#hin-playlist {
     width: 12%;
     height:75%;
     position: relative;
+    margin-right: 8px;
 }
 .queue-ele-img img{
     width:100%;
@@ -457,15 +511,20 @@ content aside,content main,#artist-list,#eng-playlist,#hin-playlist {
 .queue-ele-ico{
     width:8%;
     position: relative;
+    display:inline;
 }
 .after-fav{
     display:none;
     position:absolute;
     top:0px;
 }
+
 .before-fav:focus+.after-fav{
     display:block;
 }
+
+
+
 
 .before-fav:visited{
     color:white;
@@ -488,4 +547,88 @@ content aside,content main,#artist-list,#eng-playlist,#hin-playlist {
 .queue-element:hover{
     background-color: darkgray;
     opacity: 0.8;
+}
+
+@media (max-width:1024px){
+    #stations{
+        display:none;
+    }
+    
+}
+@media (max-width:768px){
+    .eng-songset>span,.hin-songset>span{
+        display: none;
+    }
+    #queue{
+        display: none;
+    }
+    .flex>main{
+        width: 100%;
+    }
+
+    #header-right>.no-border>input{
+        display:none;
+    }
+}
+@media (max-width:572px){
+    #footer-right{
+        display:none;
+    }
+    #occasion{
+        display: none;
+    }
+    #header-left>div>h4{
+        display:none;
+    }
+    .lr-time{
+        display: none;
+    }
+    .artist-set{
+        height: 80px;
+        width:70px;
+    }
+    #eng-playlist,#hin-playlist{
+        height:15vh;
+    }
+    #banner-img3{
+        display:none;
+    }
+    .banner-img{
+        width:45%;
+    }
+    #header-left div img{
+        width:80%;
+    }
+    #header-left{
+        margin-left: 10px;
+    }
+    .song-set{
+        height:40px;
+    }
+
+}
+@media (max-width:400px){
+    #footer-left{
+        display: none;
+    }
+    #footer-mid{
+        width: 80%;
+    }
+    #english,#hindi{
+        display: none;
+    }
+    #header-left div img{
+        width:100%;
+    }
+}
+@media (max-width:324px){
+    #banner-img1{
+        display:none;
+    }
+    .banner-img{
+        width:70%;
+    }
+    .song-set{
+        height:35px;
+    }
 }

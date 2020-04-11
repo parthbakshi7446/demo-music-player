@@ -29,7 +29,7 @@
             </div>
         </div>
     </header>
-    <content class="flex" style="margin:auto;">
+    <content class="flex content-set" style="margin:auto;">
         <main>
             <section id="banner" class="flex">
                 <img class="banner-img" id="banner-img1" src="img/ban1.jpg">
@@ -46,8 +46,8 @@
                     </div>
                     
                     <div class="flex column-flex song-set-det">
-                        <span>I don't wanna live Forever</span>
-                        <span>Ellie Goulding</span>
+                        <span class="overflow">I don't wanna live Forever</span>
+                        <span class="overflow 2">Ellie Goulding</span>
                     </div>
                     <div class="flex column-flex" style="align-items: flex-end;width:10%;">
                         <div class="dropdown">
@@ -72,7 +72,7 @@
                                 
                             </div>
                         </div>
-                        <span class="white">1:00</span>
+                        <span class="white lr-time">1:00</span>
                     </div>
                 </div>
                 <div class="song-set" >
@@ -84,8 +84,8 @@
                     </div>
                     
                     <div class="flex column-flex song-set-det">
-                        <span>PhotoGraph</span>
-                        <span>Ed Sheeran</span>
+                        <span class="overflow">PhotoGraph</span>
+                        <span class="overflow 2">Ed Sheeran</span>
                     </div>
                     <div class="flex column-flex" style="align-items: flex-end;width:10%;">
                         <div class="dropdown">
@@ -110,7 +110,7 @@
                                 
                             </div>
                         </div>
-                        <span class="white">1:00</span>
+                        <span class="white lr-time">1:00</span>
                     </div>
                 </div>
                 <div class="song-set" >
@@ -122,8 +122,8 @@
                     </div>
                     
                     <div class="flex column-flex song-set-det">
-                        <span>Ishq Wala Love</span>
-                        <span>Arijit Singh</span>
+                        <span class="overflow">Ishq Wala Love</span>
+                        <span class="overflow 2">Arijit Singh</span>
                     </div>
                     <div class="flex column-flex" style="align-items: flex-end;width:10%;">
                         <div class="dropdown">
@@ -148,7 +148,7 @@
                                 
                             </div>
                         </div>
-                        <span class="white">1:00</span>
+                        <span class="white lr-time">1:00</span>
                     </div>
                 </div>
                 <div class="song-set" >
@@ -160,8 +160,8 @@
                     </div>
                     
                     <div class="flex column-flex song-set-det">
-                        <span>Hawayein</span>
-                        <span>Arijit Singh</span>
+                        <span class="overflow">Hawayein</span>
+                        <span class="overflow 2">Arijit Singh</span>
                     </div>
                     <div class="flex column-flex" style="align-items: flex-end;width:10%;">
                         <div class="dropdown">
@@ -186,15 +186,15 @@
                                 
                             </div>
                         </div>
-                        <span class="white">1:00</span>
+                        <span class="white lr-time">1:00</span>
                     </div>
                 </div>
                 
                 
             </section>
             <section id="artists">
-                <div  class="white">
-                    Popular artists
+                <div >
+                    <span  class="white weight">Popular artists</span>
                 </div>
                 <div id="artist-list">
                     <div class="artist-set">
@@ -207,7 +207,7 @@
                             </div>
                         </div>
                         
-                        <span>name bande ka</span>
+                        <span class="overflow">Ed sheeran</span>
                     </div>
                     <div class="artist-set">
                         <div class="art-img-set">
@@ -219,7 +219,7 @@
                             </div>
                         </div>
                         
-                        <span>name bande ka</span>
+                        <span class="overflow">Ellie</span>
                     </div>
                     <div class="artist-set">
                         <div class="art-img-set">
@@ -231,7 +231,7 @@
                             </div>
                         </div>
                         
-                        <span>name bande ka</span>
+                        <span class="overflow">Taylor</span>
                     </div>
                     <div class="artist-set">
                         <div class="art-img-set">
@@ -243,7 +243,7 @@
                             </div>
                         </div>
                         
-                        <span>name bande ka</span>
+                        <span class="overflow">Arijit</span>
                     </div>
                     <div class="artist-set">
                         <div class="art-img-set">
@@ -255,7 +255,8 @@
                             </div>
                         </div>
                         
-                        <span>name bande ka</span>
+                    <span class="overflow">Armaan</span>
+                        
                     </div>
                     <div class="artist-set">
                         <div class="art-img-set">
@@ -267,7 +268,7 @@
                             </div>
                         </div>
                         
-                        <span>name bande ka</span>
+                        <span class="overflow">Rock</span>
                     </div>
                     <div class="artist-set">
                         <div class="art-img-set">
@@ -279,7 +280,7 @@
                             </div>
                         </div>
                         
-                        <span>name bande ka</span>
+                        <span class="overflow">Zayn</span>
                     </div>
                 </div>
             </section>
@@ -326,7 +327,7 @@
             </section>
             <section id="english">
                 <div>
-                    <span class="white">English Songs</span>
+                    <span class="white weight">English Songs</span>
                 </div>
                 <div id="eng-playlist">
                     <div class="eng-songset">
@@ -368,7 +369,7 @@
             </section>
             <section id="hindi">
                 <div>
-                    <span class="white">Hindi Songs</span>
+                    <span class="white weight">Hindi Songs</span>
                 </div>
                 <div id="hin-playlist">
                     <div class="hin-songset">
@@ -410,7 +411,7 @@
 
             </section>
         </main>
-        <aside class="flex column-flex">`
+        <aside class="flex column-flex" id="queue">`
             <div class="flex" id="queue-head">
                 <div class="flex">
                     <h2 class="white">Queue</h2>
@@ -445,7 +446,7 @@
                         </div>
                     </div>
                     <div class="queue-ele-det">
-                        <span>i dont wanna love forever</span>
+                        <span class="overflow">i dont wanna love forever</span>
                         <span style="font-size: 0.7em;color:gray;">Ed Sheeran</span>
                     </div>
                     <div class="queue-ele-ico">
@@ -469,7 +470,7 @@
                         </div>
                     </div>
                     <div class="queue-ele-det">
-                        <span>Onism</span>
+                        <span class="overflow">Onism</span>
                         <span style="font-size: 0.7em;color:gray;">Onismsm</span>
                     </div>
                     <div class="queue-ele-ico">
@@ -493,7 +494,7 @@
                         </div>
                     </div>
                     <div class="queue-ele-det">
-                        <span>Photograph</span>
+                        <span class="overflow">Photograph</span>
                         <span style="font-size: 0.7em;color:gray;">Ed Sheeran</span>
                     </div>
                     <div class="queue-ele-ico">
@@ -517,7 +518,7 @@
                         </div>
                     </div>
                     <div class="queue-ele-det">
-                        <span>I wanna grow old with you</span>
+                        <span class="overflow">I wanna grow old with you</span>
                         <span style="font-size: 0.7em;color:gray;">Oldies</span>
                     </div>
                     <div class="queue-ele-ico">
@@ -541,7 +542,7 @@
                         </div>
                     </div>
                     <div class="queue-ele-det">
-                        <span>Worry about Us</span>
+                        <span class="overflow">Worry about Us</span>
                         <span style="font-size: 0.7em;color:gray;">Roshi Lowe</span>
                     </div>
                     <div class="queue-ele-ico">
@@ -565,7 +566,7 @@
                         </div>
                     </div>
                     <div class="queue-ele-det">
-                        <span>New Skin</span>
+                        <span class="overflow">New Skin</span>
                         <span style="font-size: 0.7em;color:gray;">Flume</span>
                     </div>
                     <div class="queue-ele-ico">
@@ -589,7 +590,7 @@
                         </div>
                     </div>
                     <div class="queue-ele-det">
-                        <span>Shayad</span>
+                        <span class="overflow">Shayad</span>
                         <span style="font-size: 0.7em;color:gray;">Arijit Singh</span>
                     </div>
                     <div class="queue-ele-ico">
@@ -613,7 +614,7 @@
                         </div>
                     </div>
                     <div class="queue-ele-det">
-                        <span>Dil Mein Ho tum</span>
+                        <span class="overflow">Dil Mein Ho tum</span>
                         <span style="font-size: 0.7em;color:gray;">Arijit Singh</span>
                     </div>
                     <div class="queue-ele-ico">
@@ -637,7 +638,7 @@
                         </div>
                     </div>
                     <div class="queue-ele-det">
-                        <span>Ishq wala Love</span>
+                        <span class="overflow">Ishq wala Love</span>
                         <span style="font-size: 0.7em;color:gray;">Lovi Dovies</span>
                     </div>
                     <div class="queue-ele-ico">
@@ -661,7 +662,7 @@
                         </div>
                     </div>
                     <div class="queue-ele-det">
-                        <span>Hawayein</span>
+                        <span class="overflow">Hawayein</span>
                         <span style="font-size: 0.7em;color:gray;">Amaal Malik</span>
                     </div>
                     <div class="queue-ele-ico">
@@ -685,7 +686,7 @@
                         </div>
                     </div>
                     <div class="queue-ele-det">
-                        <span>Hal Mera</span>
+                        <span class="overflow">Hal Mera</span>
                         <span style="font-size: 0.7em;color:gray;">Darshan Raval</span>
                     </div>
                     <div class="queue-ele-ico">
@@ -709,7 +710,7 @@
                         </div>
                     </div>
                     <div class="queue-ele-det">
-                        <span>Bolna</span>
+                        <span class="overflow">Bolna</span>
                         <span style="font-size: 0.7em;color:gray;">Alia Bhatt</span>
                     </div>
                     <div class="queue-ele-ico">
@@ -733,7 +734,7 @@
                         </div>
                     </div>
                     <div class="queue-ele-det">
-                        <span>i dont wanna love forever</span>
+                        <span class="overflow">i dont wanna love forever</span>
                         <span style="font-size: 0.7em;color:gray;">Ed Sheeran</span>
                     </div>
                     <div class="queue-ele-ico">
@@ -757,7 +758,7 @@
                         </div>
                     </div>
                     <div class="queue-ele-det">
-                        <span>Onism</span>
+                        <span class="overflow">Onism</span>
                         <span style="font-size: 0.7em;color:gray;">Onismsm</span>
                     </div>
                     <div class="queue-ele-ico">
@@ -781,7 +782,7 @@
                         </div>
                     </div>
                     <div class="queue-ele-det">
-                        <span>Photograph</span>
+                        <span class="overflow">Photograph</span>
                         <span style="font-size: 0.7em;color:gray;">Ed Sheeran</span>
                     </div>
                     <div class="queue-ele-ico">
@@ -805,7 +806,7 @@
                         </div>
                     </div>
                     <div class="queue-ele-det">
-                        <span>I wanna grow old with you</span>
+                        <span class="overflow">I wanna grow old with you</span>
                         <span style="font-size: 0.7em;color:gray;">Oldies</span>
                     </div>
                     <div class="queue-ele-ico">
@@ -829,7 +830,7 @@
                         </div>
                     </div>
                     <div class="queue-ele-det">
-                        <span>Worry about Us</span>
+                        <span class="overflow">Worry about Us</span>
                         <span style="font-size: 0.7em;color:gray;">Roshi Lowe</span>
                     </div>
                     <div class="queue-ele-ico">
@@ -853,7 +854,7 @@
                         </div>
                     </div>
                     <div class="queue-ele-det">
-                        <span>New Skin</span>
+                        <span class="overflow">New Skin</span>
                         <span style="font-size: 0.7em;color:gray;">Flume</span>
                     </div>
                     <div class="queue-ele-ico">
@@ -877,7 +878,7 @@
                         </div>
                     </div>
                     <div class="queue-ele-det">
-                        <span>Shayad</span>
+                        <span class="overflow">Shayad</span>
                         <span style="font-size: 0.7em;color:gray;">Arijit Singh</span>
                     </div>
                     <div class="queue-ele-ico">
@@ -901,7 +902,7 @@
                         </div>
                     </div>
                     <div class="queue-ele-det">
-                        <span>Dil Mein Ho tum</span>
+                        <span class="overflow">Dil Mein Ho tum</span>
                         <span style="font-size: 0.7em;color:gray;">Arijit Singh</span>
                     </div>
                     <div class="queue-ele-ico">
@@ -925,7 +926,7 @@
                         </div>
                     </div>
                     <div class="queue-ele-det">
-                        <span>Ishq wala Love</span>
+                        <span class="overflow">Ishq wala Love</span>
                         <span style="font-size: 0.7em;color:gray;">Lovi Dovies</span>
                     </div>
                     <div class="queue-ele-ico">
@@ -949,7 +950,7 @@
                         </div>
                     </div>
                     <div class="queue-ele-det">
-                        <span>Hawayein</span>
+                        <span class="overflow">Hawayein</span>
                         <span style="font-size: 0.7em;color:gray;">Amaal Malik</span>
                     </div>
                     <div class="queue-ele-ico">
@@ -973,7 +974,7 @@
                         </div>
                     </div>
                     <div class="queue-ele-det">
-                        <span>Hal Mera</span>
+                        <span class="overflow">Hal Mera</span>
                         <span style="font-size: 0.7em;color:gray;">Darshan Raval</span>
                     </div>
                     <div class="queue-ele-ico">
@@ -997,7 +998,7 @@
                         </div>
                     </div>
                     <div class="queue-ele-det">
-                        <span>Bolna</span>
+                        <span class="overflow">Bolna</span>
                         <span style="font-size: 0.7em;color: gray;">Alia Bhatt</span>
                     </div>
                     <div class="queue-ele-ico">
@@ -1014,7 +1015,58 @@
             
         </aside>
     </content>
-    <footer></footer>
+    <footer>
+        <div class="flex" style="width: inherit;height: inherit;justify-content: space-around;">
+            <div id="footer-left">
+                <img src="img.jpg">
+                <div class="flex column-flex" style="width:80%">
+                    <span class="size1-2rem overflow white" >I dont wanna live forever</span>
+                    <span class="overflow white">ellie goulidng</span>
+                </div>
+                <div class="flex " style="align-items: baseline;">
+                    <!-- <i class="fa fa-heart-o white" aria-hidden="true"></i> -->
+                    <div style="position: relative;">
+                        <a class="before-fav" href="#"><div>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </div></a>
+                        
+                        <div class="after-fav">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <i style="margin-left: 4px;" class="fa fa-ban white" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div id="footer-mid">
+                <div id="footer-mid-up">
+                    <i class="fa fa-random white" aria-hidden="true"></i>
+                    <i class="fa fa-step-backward white" aria-hidden="true"></i>
+                    <div class="border-white" style="position: relative;">
+                        <a id="pause-toggle" class="before-fav" href="#"><div>
+                            <i class="fa fa-play white" aria-hidden="true"></i>
+                        </div></a>
+                        <a id="play-toggle" class="after-fav"><div >
+                            <i class="fa fa-pause white" aria-hidden="true"></i>
+                        </div></a>
+                    </div>
+                    <i class="fa fa-step-forward white" aria-hidden="true"></i>
+                    <i class="fa fa-repeat white" aria-hidden="true"></i>
+                </div>
+                <div class="flex" style="align-items: center; justify-content: center;">
+                    <span class="white">1:24</span>
+                    <div style="background-color: gray; width: 70%;height:10px;border-radius: 5px;margin: 2px;">
+                        <div style="background-color: greenyellow; width: 60%;height: 4px;margin:3px;"></div>
+                    </div>
+                    <span class="white">4:44</span>
+                </div>
+            </div>
+            <div id="footer-right">
+                <i class="fa fa-list white" aria-hidden="true"></i>
+                <i class="fa fa-mobile white" aria-hidden="true"></i>
+                <i class="fa fa-arrows-alt white" aria-hidden="true"></i>
+            </div>
+        </div>
+    </footer>
 
     
 </body>
