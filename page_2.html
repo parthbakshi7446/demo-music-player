@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel ="stylesheet" href="page_2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/8abaf17b1b.js"></script>
+    <title>Songs based on Artist</title>
+
+</head>
+<body>
+    <header>
+        <div id="header-left">
+            <div class="flex" style="height: 90%;width:15%;margin-right: 100px;">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/music-1128-1131524.png">
+                <span class="white">Ninjas <span class="size1-2rem">Studio</span></span>
+            </div>
+            <div ><h4 class="size1-2rem"><a class="remove-underline white" href="#">Favourites</a></h4></div>
+        </div>
+        <div id="header-right">
+            <div class="margin5px background-gray no-border">
+                <i class="fa fa-search white" aria-hidden="true"></i>
+                <input type="text" placeholder="Search" class="background-gray no-border">
+                <i class="fa fa-microphone white " aria-hidden="true"></i>
+            </div>
+            <div class="margin5px">
+                <i class="fa fa-bell white fa-lg" aria-hidden="true"></i>
+            </div>
+            <div class="margin5px h90 w15">
+                <a href="#"> <img class="h90 me-picture" src="img/picture.jpeg"> </a>
+            </div>
+        </div>
+    </header>
+    <content class="flex" style='margin: auto;;'>
+        <main>
+            <div id="artist-intro-set">
+                <img src="img.jpg">
+                <div id="artist-intro">
+                    
+                </div>
+            </div>
+            <div id="artist-song-list"></div>
+        </main>
+        <section id="side-box">
+            <section id="up-aside">
+                <div class="flex" style="justify-content: center;align-items: center;">
+                    <div class="flex" style="width: 47%;">
+                        <span class="white size1-5rem">Similar Artists</span>
+                    </div>
+                    <div class="flex flex-end" style="width: 47%;">
+                        <a class="remove-underline" href="#"><span class="white size-small">View All</span></a>
+                    </div>
+                </div>
+                <div id="artist-side">
+                    <div class="song-set" >
+                        <div class="song-img-set">
+                            <img class="song-img" src="img/e-song2.jpg">
+                            <div class="song-img-hover">
+                                <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="flex column-flex song-set-det">
+                            <span class="overflow">Imagine Dragons</span>
+                            <span class="overflow 2" style="font-size: 0.7em;color:gray;">Pop Band</span>
+                        </div>
+                        <div class="flex column-flex" style="align-items: flex-end;width:10%;">
+                            <div class="dropdown">
+                                <a class="dot" href="#">...</a>
+                                <div class="show flex column-flex">
+                                    <div class="flex">
+                                        <i class="fa fa-play" aria-hidden="true"></i>
+                                        <a href="">Play Now</a>
+                                    </div>
+                                    <div class="flex">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                        <a href="">Add to Queue</a>
+                                    </div>
+                                    <div class="flex">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <a href="">Add to Favourites</a>
+                                    </div>
+                                    <div class="flex">
+                                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                        <a href="">Get Info</a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <span class="white lr-time">1:00</span>
+                        </div>
+                    </div>
+                    <div class="song-set" >
+                        <div class="song-img-set">
+                            <img class="song-img" src="img/e-song2.jpg">
+                            <div class="song-img-hover">
+                                <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="flex column-flex song-set-det">
+                            <span class="overflow">Imagine Dragons</span>
+                            <span class="overflow 2" style="font-size: 0.7em;color:gray;">Pop Band</span>
+                        </div>
+                        <div class="flex column-flex" style="align-items: flex-end;width:10%;">
+                            <div class="dropdown">
+                                <a class="dot" href="#">...</a>
+                                <div class="show flex column-flex">
+                                    <div class="flex">
+                                        <i class="fa fa-play" aria-hidden="true"></i>
+                                        <a href="">Play Now</a>
+                                    </div>
+                                    <div class="flex">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                        <a href="">Add to Queue</a>
+                                    </div>
+                                    <div class="flex">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <a href="">Add to Favourites</a>
+                                    </div>
+                                    <div class="flex">
+                                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                        <a href="">Get Info</a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <span class="white lr-time">1:00</span>
+                        </div>
+                    </div>
+                    <div class="song-set" >
+                        <div class="song-img-set">
+                            <img class="song-img" src="img/e-song2.jpg">
+                            <div class="song-img-hover">
+                                <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="flex column-flex song-set-det">
+                            <span class="overflow">Imagine Dragons</span>
+                            <span class="overflow 2" style="font-size: 0.7em;color:gray;">Pop Band</span>
+                        </div>
+                        <div class="flex column-flex" style="align-items: flex-end;width:10%;">
+                            <div class="dropdown">
+                                <a class="dot" href="#">...</a>
+                                <div class="show flex column-flex">
+                                    <div class="flex">
+                                        <i class="fa fa-play" aria-hidden="true"></i>
+                                        <a href="">Play Now</a>
+                                    </div>
+                                    <div class="flex">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                        <a href="">Add to Queue</a>
+                                    </div>
+                                    <div class="flex">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <a href="">Add to Favourites</a>
+                                    </div>
+                                    <div class="flex">
+                                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                        <a href="">Get Info</a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <span class="white lr-time">1:00</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <aside class="flex column-flex" id="queue">`
+                <div class="flex" id="queue-head">
+                    <div class="flex">
+                        <h3 class="white">Recently Played</h3>
+                    </div>
+                    <div class="flex" style="justify-content: flex-end;">
+                        <span class="white">Queue</span>
+                        <div class="dropdown">
+                            <a class="dot" href="#">...</a>
+                            <div class="show flex column-flex que" style="right: 0px;">
+                                <div class="flex">
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                    <a href="">Playlists</a>
+                                </div>
+                                <div class="flex">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <a href="">Favourite Songs</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="queue-ele">
+    
+                    <div class="queue-element">
+                        <div class="queue-ele-no">
+                            <span>1</span>
+                        </div>
+                        <div class="queue-ele-img">
+                            <img src="img/e-song1.jpg">
+                            <div class="queue-ele-img-hover">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="queue-ele-det">
+                            <span class="overflow">I dont wanna love forever</span>
+                            <span style="font-size: 0.7em;color:gray;">Ed Sheeran</span>
+                        </div>
+                        <div class="queue-ele-ico">
+                            <a class="before-fav" href="#"><div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div></a>
+                            
+                            <div class="after-fav">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="queue-element">
+                        <div class="queue-ele-no">
+                            <span>2</span>
+                        </div>
+                        <div class="queue-ele-img">
+                            <img src="img/e-song3.jpg">
+                            <div class="queue-ele-img-hover">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="queue-ele-det">
+                            <span class="overflow">Onism</span>
+                            <span style="font-size: 0.7em;color:gray;">Onismsm</span>
+                        </div>
+                        <div class="queue-ele-ico">
+                            <a class="before-fav" href="#"><div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div></a>
+                            
+                            <div class="after-fav">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="queue-element">
+                        <div class="queue-ele-no">
+                            <span>3</span>
+                        </div>
+                        <div class="queue-ele-img">
+                            <img src="img/e-song2.jpg">
+                            <div class="queue-ele-img-hover">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="queue-ele-det">
+                            <span class="overflow">Photograph</span>
+                            <span style="font-size: 0.7em;color:gray;">Ed Sheeran</span>
+                        </div>
+                        <div class="queue-ele-ico">
+                            <a class="before-fav" href="#"><div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div></a>
+                            
+                            <div class="after-fav">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="queue-element">
+                        <div class="queue-ele-no">
+                            <span>4</span>
+                        </div>
+                        <div class="queue-ele-img">
+                            <img src="img/e-song4.jpg">
+                            <div class="queue-ele-img-hover">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="queue-ele-det">
+                            <span class="overflow">I wanna grow old with you</span>
+                            <span style="font-size: 0.7em;color:gray;">Oldies</span>
+                        </div>
+                        <div class="queue-ele-ico">
+                            <a class="before-fav" href="#"><div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div></a>
+                            
+                            <div class="after-fav">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="queue-element">
+                        <div class="queue-ele-no">
+                            <span>5</span>
+                        </div>
+                        <div class="queue-ele-img">
+                            <img src="img/e-song5.jpg">
+                            <div class="queue-ele-img-hover">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="queue-ele-det">
+                            <span class="overflow">Worry about Us</span>
+                            <span style="font-size: 0.7em;color:gray;">Roshi Lowe</span>
+                        </div>
+                        <div class="queue-ele-ico">
+                            <a class="before-fav" href="#"><div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div></a>
+                            
+                            <div class="after-fav">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="queue-element">
+                        <div class="queue-ele-no">
+                            <span>6</span>
+                        </div>
+                        <div class="queue-ele-img">
+                            <img src="img/e-song6.jpg">
+                            <div class="queue-ele-img-hover">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="queue-ele-det">
+                            <span class="overflow">New Skin</span>
+                            <span style="font-size: 0.7em;color:gray;">Flume</span>
+                        </div>
+                        <div class="queue-ele-ico">
+                            <a class="before-fav" href="#"><div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div></a>
+                            
+                            <div class="after-fav">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="queue-element">
+                        <div class="queue-ele-no">
+                            <span>7</span>
+                        </div>
+                        <div class="queue-ele-img">
+                            <img src="img/h-song1.jpg">
+                            <div class="queue-ele-img-hover">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="queue-ele-det">
+                            <span class="overflow">Shayad</span>
+                            <span style="font-size: 0.7em;color:gray;">Arijit Singh</span>
+                        </div>
+                        <div class="queue-ele-ico">
+                            <a class="before-fav" href="#"><div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div></a>
+                            
+                            <div class="after-fav">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="queue-element">
+                        <div class="queue-ele-no">
+                            <span>8</span>
+                        </div>
+                        <div class="queue-ele-img">
+                            <img src="img/h-song2.jpg">
+                            <div class="queue-ele-img-hover">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="queue-ele-det">
+                            <span class="overflow">Dil Mein Ho tum</span>
+                            <span style="font-size: 0.7em;color:gray;">Arijit Singh</span>
+                        </div>
+                        <div class="queue-ele-ico">
+                            <a class="before-fav" href="#"><div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div></a>
+                            
+                            <div class="after-fav">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="queue-element">
+                        <div class="queue-ele-no">
+                            <span>9</span>
+                        </div>
+                        <div class="queue-ele-img">
+                            <img src="img/h-song3.jpg">
+                            <div class="queue-ele-img-hover">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="queue-ele-det">
+                            <span class="overflow">Ishq wala Love</span>
+                            <span style="font-size: 0.7em;color:gray;">Lovi Dovies</span>
+                        </div>
+                        <div class="queue-ele-ico">
+                            <a class="before-fav" href="#"><div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div></a>
+                            
+                            <div class="after-fav">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="queue-element">
+                        <div class="queue-ele-no">
+                            <span>10</span>
+                        </div>
+                        <div class="queue-ele-img">
+                            <img src="img/h-song4.jpg">
+                            <div class="queue-ele-img-hover">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="queue-ele-det">
+                            <span class="overflow">Hawayein</span>
+                            <span style="font-size: 0.7em;color:gray;">Amaal Malik</span>
+                        </div>
+                        <div class="queue-ele-ico">
+                            <a class="before-fav" href="#"><div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div></a>
+                            
+                            <div class="after-fav">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="queue-element">
+                        <div class="queue-ele-no">
+                            <span>11</span>
+                        </div>
+                        <div class="queue-ele-img">
+                            <img src="img/h-song5.jpg">
+                            <div class="queue-ele-img-hover">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="queue-ele-det">
+                            <span class="overflow">Hal Mera</span>
+                            <span style="font-size: 0.7em;color:gray;">Darshan Raval</span>
+                        </div>
+                        <div class="queue-ele-ico">
+                            <a class="before-fav" href="#"><div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div></a>
+                            
+                            <div class="after-fav">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="queue-element">
+                        <div class="queue-ele-no">
+                            <span>12</span>
+                        </div>
+                        <div class="queue-ele-img">
+                            <img src="img/h-song6.jpg">
+                            <div class="queue-ele-img-hover">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="queue-ele-det">
+                            <span class="overflow">Bolna</span>
+                            <span style="font-size: 0.7em;color:gray;">Alia Bhatt</span>
+                        </div>
+                        <div class="queue-ele-ico">
+                            <a class="before-fav" href="#"><div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div></a>
+                            
+                            <div class="after-fav">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="queue-element">
+                        <div class="queue-ele-no">
+                            <span>1</span>
+                        </div>
+                        <div class="queue-ele-img">
+                            <img src="img/e-song1.jpg">
+                            <div class="queue-ele-img-hover">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="queue-ele-det">
+                            <span class="overflow">i dont wanna love forever</span>
+                            <span style="font-size: 0.7em;color:gray;">Ed Sheeran</span>
+                        </div>
+                        <div class="queue-ele-ico">
+                            <a class="before-fav" href="#"><div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div></a>
+                            
+                            <div class="after-fav">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="queue-element">
+                        <div class="queue-ele-no">
+                            <span>2</span>
+                        </div>
+                        <div class="queue-ele-img">
+                            <img src="img/e-song3.jpg">
+                            <div class="queue-ele-img-hover">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="queue-ele-det">
+                            <span class="overflow">Onism</span>
+                            <span style="font-size: 0.7em;color:gray;">Onismsm</span>
+                        </div>
+                        <div class="queue-ele-ico">
+                            <a class="before-fav" href="#"><div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div></a>
+                            
+                            <div class="after-fav">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="queue-element">
+                        <div class="queue-ele-no">
+                            <span>3</span>
+                        </div>
+                        <div class="queue-ele-img">
+                            <img src="img/e-song2.jpg">
+                            <div class="queue-ele-img-hover">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="queue-ele-det">
+                            <span class="overflow">Photograph</span>
+                            <span style="font-size: 0.7em;color:gray;">Ed Sheeran</span>
+                        </div>
+                        <div class="queue-ele-ico">
+                            <a class="before-fav" href="#"><div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div></a>
+                            
+                            <div class="after-fav">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="queue-element">
+                        <div class="queue-ele-no">
+                            <span>4</span>
+                        </div>
+                        <div class="queue-ele-img">
+                            <img src="img/e-song4.jpg">
+                            <div class="queue-ele-img-hover">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="queue-ele-det">
+                            <span class="overflow">I wanna grow old with you</span>
+                            <span style="font-size: 0.7em;color:gray;">Oldies</span>
+                        </div>
+                        <div class="queue-ele-ico">
+                            <a class="before-fav" href="#"><div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div></a>
+                            
+                            <div class="after-fav">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="queue-element">
+                        <div class="queue-ele-no">
+                            <span>5</span>
+                        </div>
+                        <div class="queue-ele-img">
+                            <img src="img/e-song5.jpg">
+                            <div class="queue-ele-img-hover">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="queue-ele-det">
+                            <span class="overflow">Worry about Us</span>
+                            <span style="font-size: 0.7em;color:gray;">Roshi Lowe</span>
+                        </div>
+                        <div class="queue-ele-ico">
+                            <a class="before-fav" href="#"><div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div></a>
+                            
+                            <div class="after-fav">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="queue-element">
+                        <div class="queue-ele-no">
+                            <span>6</span>
+                        </div>
+                        <div class="queue-ele-img">
+                            <img src="img/e-song6.jpg">
+                            <div class="queue-ele-img-hover">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="queue-ele-det">
+                            <span class="overflow">New Skin</span>
+                            <span style="font-size: 0.7em;color:gray;">Flume</span>
+                        </div>
+                        <div class="queue-ele-ico">
+                            <a class="before-fav" href="#"><div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div></a>
+                            
+                            <div class="after-fav">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="queue-element">
+                        <div class="queue-ele-no">
+                            <span>7</span>
+                        </div>
+                        <div class="queue-ele-img">
+                            <img src="img/h-song1.jpg">
+                            <div class="queue-ele-img-hover">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="queue-ele-det">
+                            <span class="overflow">Shayad</span>
+                            <span style="font-size: 0.7em;color:gray;">Arijit Singh</span>
+                        </div>
+                        <div class="queue-ele-ico">
+                            <a class="before-fav" href="#"><div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div></a>
+                            
+                            <div class="after-fav">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="queue-element">
+                        <div class="queue-ele-no">
+                            <span>8</span>
+                        </div>
+                        <div class="queue-ele-img">
+                            <img src="img/h-song2.jpg">
+                            <div class="queue-ele-img-hover">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="queue-ele-det">
+                            <span class="overflow">Dil Mein Ho tum</span>
+                            <span style="font-size: 0.7em;color:gray;">Arijit Singh</span>
+                        </div>
+                        <div class="queue-ele-ico">
+                            <a class="before-fav" href="#"><div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div></a>
+                            
+                            <div class="after-fav">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="queue-element">
+                        <div class="queue-ele-no">
+                            <span>9</span>
+                        </div>
+                        <div class="queue-ele-img">
+                            <img src="img/h-song3.jpg">
+                            <div class="queue-ele-img-hover">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="queue-ele-det">
+                            <span class="overflow">Ishq wala Love</span>
+                            <span style="font-size: 0.7em;color:gray;">Lovi Dovies</span>
+                        </div>
+                        <div class="queue-ele-ico">
+                            <a class="before-fav" href="#"><div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div></a>
+                            
+                            <div class="after-fav">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="queue-element">
+                        <div class="queue-ele-no">
+                            <span>10</span>
+                        </div>
+                        <div class="queue-ele-img">
+                            <img src="img/h-song4.jpg">
+                            <div class="queue-ele-img-hover">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="queue-ele-det">
+                            <span class="overflow">Hawayein</span>
+                            <span style="font-size: 0.7em;color:gray;">Amaal Malik</span>
+                        </div>
+                        <div class="queue-ele-ico">
+                            <a class="before-fav" href="#"><div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div></a>
+                            
+                            <div class="after-fav">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="queue-element">
+                        <div class="queue-ele-no">
+                            <span>11</span>
+                        </div>
+                        <div class="queue-ele-img">
+                            <img src="img/h-song5.jpg">
+                            <div class="queue-ele-img-hover">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="queue-ele-det">
+                            <span class="overflow">Hal Mera</span>
+                            <span style="font-size: 0.7em;color:gray;">Darshan Raval</span>
+                        </div>
+                        <div class="queue-ele-ico">
+                            <a class="before-fav" href="#"><div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div></a>
+                            
+                            <div class="after-fav">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="queue-element">
+                        <div class="queue-ele-no">
+                            <span>12</span>
+                        </div>
+                        <div class="queue-ele-img">
+                            <img src="img/h-song6.jpg">
+                            <div class="queue-ele-img-hover">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="queue-ele-det">
+                            <span class="overflow">Bolna</span>
+                            <span style="font-size: 0.7em;color: gray;">Alia Bhatt</span>
+                        </div>
+                        <div class="queue-ele-ico">
+                            <a class="before-fav" href="#"><div>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div></a>
+                            
+                            <div class="after-fav">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </aside>
+        </section>
+
+    </content>
+    <footer>
+        <div class="flex" style="width: inherit;height: inherit;justify-content: space-around;">
+            <div id="footer-left">
+                <img src="img.jpg">
+                <div class="flex column-flex" style="width:80%">
+                    <span class="size1-2rem overflow white" >I dont wanna live forever</span>
+                    <span class="overflow white">ellie goulidng</span>
+                </div>
+                <div class="flex " style="align-items: baseline;">
+                    <!-- <i class="fa fa-heart-o white" aria-hidden="true"></i> -->
+                    <div style="position: relative;">
+                        <a class="before-fav" href="#"><div>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </div></a>
+                        
+                        <div class="after-fav">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <i style="margin-left: 4px;" class="fa fa-ban white" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div id="footer-mid">
+                <div id="footer-mid-up">
+                    <i class="fa fa-random white" aria-hidden="true"></i>
+                    <i class="fa fa-step-backward white" aria-hidden="true"></i>
+                    <div class="border-white" style="position: relative;">
+                        <a id="pause-toggle" class="before-fav" href="#"><div>
+                            <i class="fa fa-play white" aria-hidden="true"></i>
+                        </div></a>
+                        <a id="play-toggle" class="after-fav"><div >
+                            <i class="fa fa-pause white" aria-hidden="true"></i>
+                        </div></a>
+                    </div>
+                    <i class="fa fa-step-forward white" aria-hidden="true"></i>
+                    <i class="fa fa-repeat white" aria-hidden="true"></i>
+                </div>
+                <div class="flex" style="align-items: center; justify-content: center;">
+                    <span class="white">1:24</span>
+                    <div style="background-color: gray; width: 70%;height:10px;border-radius: 5px;margin: 2px;">
+                        <div style="background-color: greenyellow; width: 60%;height: 4px;margin:3px;"></div>
+                    </div>
+                    <span class="white">4:44</span>
+                </div>
+            </div>
+            <div id="footer-right">
+                <i class="fa fa-list white" aria-hidden="true"></i>
+                <i class="fa fa-mobile white" aria-hidden="true"></i>
+                <i class="fa fa-arrows-alt white" aria-hidden="true"></i>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

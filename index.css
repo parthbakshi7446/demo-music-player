@@ -547,6 +547,7 @@ content aside,content main,#artist-list,#eng-playlist,#hin-playlist {
 .queue-element:hover{
     background-color: darkgray;
     opacity: 0.8;
+    border-radius: 10px;
 }
 
 @media (max-width:1024px){
